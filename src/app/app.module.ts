@@ -14,6 +14,7 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailsComponent } from './hero-details/hero-details.component';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { HeroesComponent } from './heroes/heroes.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroDetailsComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
