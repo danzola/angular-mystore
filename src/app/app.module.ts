@@ -18,6 +18,7 @@ import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { HeroService } from './hero.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,8 @@ import { MessageService } from './message.service';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'heroes', component: HeroesComponent },
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'detail/:id', component: HeroDetailsComponent },
     ]),
     FormsModule
   ],
@@ -43,7 +46,8 @@ import { MessageService } from './message.service';
     ShippingComponent,
     HeroesComponent,
     HeroDetailsComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService, HeroService, MessageService]
